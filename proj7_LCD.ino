@@ -1,5 +1,3 @@
-//Oprogramowanie wyświetlacza LCD z podstawowymi funkcjami w opcji przesyłu 4 bitowej 
-
 #include <avr/io.h>
 #include <util/delay.h>
 #include <string.h>
@@ -24,8 +22,6 @@ void LCD_print(const char *array);
 
 int main()
 {
-  
-
   LCD_init();
 
   LCD_set_cursor(0, 0);
@@ -38,7 +34,6 @@ int main()
 }
 
 
-
 void E_pulse()
 {
   PORTD |= (1<<E);
@@ -46,7 +41,6 @@ void E_pulse()
   PORTD &= ~(1<<E);
   _delay_ms(2);
 }
-
 
 void LCD_command(unsigned char com)
 {
@@ -102,8 +96,6 @@ void LCD_init()
   //Display clear - czyści wyświetlacz
   LCD_command(0b00000001);
 }
-
-
 
 void LCD_clear()
 {
