@@ -64,7 +64,7 @@ Wymagania sprzętowe:
 
 - Zasilanie 5V
 
-- Instrukcja użytkowania:
+Instrukcja użytkowania:
 
 - Skompiluj kod w środowisku obsługującym AVR C (np. Atmel Studio, PlatformIO, AVR-GCC).
 
